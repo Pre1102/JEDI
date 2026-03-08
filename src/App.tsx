@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   ShieldCheck, 
   Upload, 
@@ -54,6 +54,18 @@ export default function App() {
   const [auditResults, setAuditResults] = useState<AuditResults | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const container = document.querySelector('.h-[300px]');
+    if (container) {
+      console.log('ResponsiveContainer dimensions:', {
+        width: container.clientWidth,
+        height: container.clientHeight,
+      });
+    } else {
+      console.log('ResponsiveContainer parent container not found.');
+    }
+  }, []);
 
   const handleExportPDF = () => {
     if (!auditResults) return;
