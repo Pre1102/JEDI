@@ -112,11 +112,7 @@ React
 Tailwind CSS
 Recharts / Chart.js
 Backend
-FastAPI
-Python ML libraries
-SHAP for explainability
-
-ui workfloww-
+fast api
 
 
 
