@@ -19,3 +19,10 @@ Upload CSV datasets
 Automatic dataset preview
 Configure target variable and sensitive attributes
 
+🤖 Model Evaluation
+Train baseline ML models directly in the system:
+Logistic Regression
+Random Forest
+Decision Tree
+These models are used as baseline predictors for ethical evaluation.
+
