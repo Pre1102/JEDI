@@ -62,3 +62,13 @@ Sensitive Attribute
 
 A high contribution from sensitive attributes may indicate potential bias.
 
+Individual Prediction Explanation
+Explains the reasoning behind a specific prediction.
+Example:
+Prediction: Positive
+Top Contributing Factors:
+Feature A +0.32
+Feature B +0.15
+Sensitive Attribute -0.20
+This allows transparent AI decision auditing.
+
