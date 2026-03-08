@@ -8,7 +8,7 @@ export interface DatasetStatsData {
   missingValues: number;
   duplicateRows: number;
 }
-
+// statics
 interface DatasetStatsProps {
   stats: DatasetStatsData;
 }
