@@ -119,3 +119,26 @@ PDF
 JSON
 Dashboard view
 
+🏗 System Architecture
+User
+ │
+ ▼
+Frontend Dashboard (React)
+ │
+ ▼
+Backend API (FastAPI)
+ │
+ ├───────────────┬───────────────┬───────────────
+ ▼               ▼               ▼
+Dataset Engine   Model Engine    Reporting Engine
+ │               │               │
+ ▼               ▼               ▼
+Data Preprocess  Model Training  Ethical Scorecard
+ │               │               │
+ ▼               ▼               ▼
+Bias Detection   Fairness Tests  Bias Report
+ │               │               │
+ ▼               ▼               ▼
+Dataset Summary  Explainability  Recommendations
+
+
