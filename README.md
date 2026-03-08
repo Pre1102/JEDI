@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ethical AI Auditor
 
-# Run and deploy your AI Studio app
+Ethical AI Auditor is a system designed to evaluate AI models for **fairness, transparency, and ethical compliance** before deployment. It helps identify bias in machine learning systems and generates an **Ethical AI Score (0–100)** along with a certification label.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/57c9b7da-6efd-4dfb-9a32-5d8a490ddb56
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+* Detects **bias across sensitive groups**
+* Evaluates **Demographic Parity and Equal Opportunity**
+* Checks **model calibration and accuracy**
+* Supports **model explainability using SHAP/LIME**
+* Generates an **Ethical AI Certification Score**
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
