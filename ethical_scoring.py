@@ -19,7 +19,7 @@ def calculate_ethical_ai_score(
         dict: Contains total score, individual component scores, and certification label.
     """
     
-    # 1. Demographic Parity Score (Max 35 points)
+    # 1. Demographic Parity Score
     if demographic_parity_diff < 0.05:
         dp_score = 35
     elif 0.05 <= demographic_parity_diff <= 0.10:
