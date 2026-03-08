@@ -7,6 +7,7 @@ interface BiasPatternsProps {
   biasDetection: BiasDetectionData;
 }
 
+// bias pattern
 export function BiasPatterns({ biasDetection }: BiasPatternsProps) {
   return (
     <Card className="dark:bg-zinc-800 dark:border-zinc-700">

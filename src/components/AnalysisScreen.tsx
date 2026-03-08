@@ -8,6 +8,7 @@ import { DataQualitySummary } from './DataQualitySummary';
 import type { AuditResults } from '../services/geminiService';
 import type { DatasetStatsData } from './DatasetStats';
 
+// analysis screen 
 const screenTransition = {
   initial: { opacity: 0, y: 12 },
   animate: { opacity: 1, y: 0 },
