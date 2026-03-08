@@ -131,16 +131,7 @@ Equal opportunity
 Calibration metrics
 Prediction distribution charts
 Explainability Dashboard
-Shows:
-Feature importance
-SHAP plots
-Sensitive attribute influence
-Bias Report
-Highlights bias patterns and improvement suggestions.
-Compliance Scorecard
-Final ethical evaluation with options to:
-Download report
-Export results
+
 
 
 
