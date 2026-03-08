@@ -72,3 +72,21 @@ Feature B +0.15
 Sensitive Attribute -0.20
 This allows transparent AI decision auditing.
 
+📊 Ethical Scorecard
+The framework produces a visual ethical compliance scorecard summarizing fairness results.
+Ethical Test
+Result
+Demographic Parity
+🟢 Pass
+Equal Opportunity
+🟡 Warning
+Calibration
+🟢 Pass
+Explainability
+🟢 Pass
+
+Color Indicators
+🟢 Pass
+🟡 Warning
+🔴 Fail
+
