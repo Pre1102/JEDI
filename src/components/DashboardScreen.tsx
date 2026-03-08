@@ -8,6 +8,7 @@ import { ScoreGauge } from './ScoreGauge';
 import { cn } from '../lib/utils';
 import type { AuditResults } from '../services/geminiService';
 
+// Dashboard screen
 interface DashboardScreenProps {
   auditResults: AuditResults;
   fileName: string;
