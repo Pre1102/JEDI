@@ -142,11 +142,5 @@ Final ethical evaluation with options to:
 Download report
 Export results
 
-Future Improvements
-Support for deep learning models
-Automated bias mitigation techniques
-Multi-dataset benchmarking
-Real-time model monitoring
-API integration for production systems
 
 
