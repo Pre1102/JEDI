@@ -13,3 +13,9 @@ Financial risk assessment
 Criminal justice / recidivism prediction
 Any ML system using structured tabular data
 
+🚀 Features
+📊 Dataset Auditing
+Upload CSV datasets
+Automatic dataset preview
+Configure target variable and sensitive attributes
+
