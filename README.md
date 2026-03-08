@@ -99,3 +99,10 @@ fairness comparison charts
 statistical summaries
 demographic group analysis
 
+💡 Recommendations
+To mitigate bias, the framework suggests improvements such as:
+balancing the training dataset
+removing proxy variables correlated with sensitive attributes
+applying fairness-aware training techniques
+evaluating alternative models
+
