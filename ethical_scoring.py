@@ -68,10 +68,10 @@ def calculate_ethical_ai_score(
     # Determine Certification Label
     if total_score >= 80:
         label = "Ethical AI Certified"
-    elif 60 <= total_score <= 79:
+    elif 65 <= total_score <= 80:
         label = "Moderate Risk"
-    elif 40 <= total_score <= 59:
-        label = "High Bias Risk"
+    elif 45 <= total_score <= 64:
+        label = "High Risk"
     else:
         label = "Non-Compliant"
         
