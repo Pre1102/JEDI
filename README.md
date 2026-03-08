@@ -33,3 +33,8 @@ Measures whether prediction outcomes are similar across demographic groups.
 DP_diff = |P(ŷ = 1 | group A) − P(ŷ = 1 | group B)|
 Large differences may indicate algorithmic bias.
 
+Equal Opportunity
+Ensures qualified individuals have equal chances of positive predictions.
+TPR = TP / (TP + FN)
+EO_diff = |TPR_A − TPR_B|
+
