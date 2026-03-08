@@ -3,7 +3,7 @@ import { Upload, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
-
+// file uploading
 interface FileUploaderProps {
   file: File | null;
   onFileSelect: (file: File) => void;
