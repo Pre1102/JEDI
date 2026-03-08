@@ -6,7 +6,7 @@ import { Button, Card, Badge } from './UI';
 interface LandingScreenProps {
   onStartAudit: () => void;
 }
-
+// landing scrren 
 const screenTransition = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
