@@ -21,10 +21,10 @@ def calculate_ethical_ai_score(
     
     # 1. Demographic Parity Score
     if demographic_parity_diff < 0.05:
-        dp_score = 35
-    elif 0.05 <= demographic_parity_diff <= 0.10:
-        dp_score = 25
-    elif 0.10 < demographic_parity_diff <= 0.20:
+        dp_score = 39
+    elif 0.05 <= demographic_parity_diff <= 0.11:
+        dp_score = 30
+    elif 0.11 < demographic_parity_diff <= 0.20:
         dp_score = 15
     else:
         dp_score = 5
