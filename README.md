@@ -116,21 +116,7 @@ FastAPI
 Python ML libraries
 SHAP for explainability
 
-UI Workflow
-Landing Page
-Introduces the JEDI Code Compliance System and its core capabilities.
-Dataset Upload
-Upload CSV dataset
-Select target variable
-Choose sensitive attributes
-Select model type
-Fairness Evaluation Dashboard
-Displays:
-Demographic parity
-Equal opportunity
-Calibration metrics
-Prediction distribution charts
-Explainability Dashboard
+ui workfloww-
 
 
 
