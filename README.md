@@ -38,3 +38,9 @@ Ensures qualified individuals have equal chances of positive predictions.
 TPR = TP / (TP + FN)
 EO_diff = |TPR_A − TPR_B|
 
+Calibration
+Evaluates the reliability of predicted probabilities.
+Metric used: Brier Score
+Calibration_diff = |Brier_A − Brier_B|
+Poor calibration indicates unreliable predictions.
+
