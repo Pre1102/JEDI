@@ -87,7 +87,6 @@ def calculate_ethical_ai_score(
         "certification_label": label
     }
 
-# Example Usage:
 if __name__ == "__main__":
     results = calculate_ethical_ai_score(
         demographic_parity_diff=0.04,
