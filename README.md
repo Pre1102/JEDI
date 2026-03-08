@@ -106,3 +106,16 @@ removing proxy variables correlated with sensitive attributes
 applying fairness-aware training techniques
 evaluating alternative models
 
+📑 Compliance Reporting
+A complete AI governance report is generated containing:
+Dataset summary
+Model details
+Fairness metrics
+Explainability analysis
+Bias detection insights
+Ethical recommendations
+Reports can be exported as:
+PDF
+JSON
+Dashboard view
+
