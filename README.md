@@ -90,3 +90,12 @@ Color Indicators
 🟡 Warning
 🔴 Fail
 
+📉 Bias Detection Report
+The system highlights patterns of bias across demographic groups.
+Example insight:
+Significant differences detected in prediction outcomes between demographic groups, indicating potential algorithmic bias.
+Reports include:
+fairness comparison charts
+statistical summaries
+demographic group analysis
+
