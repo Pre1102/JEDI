@@ -29,12 +29,12 @@ def calculate_ethical_ai_score(
     else:
         dp_score = 5
         
-    # 2. Equal Opportunity Score (Max 20 points)
+    # 2. Equal Opportunity Score 
     if equal_opportunity_diff < 0.05:
         eo_score = 20
-    elif 0.05 <= equal_opportunity_diff <= 0.10:
+    elif 0.05 <= equal_opportunity_diff <= 0.11:
         eo_score = 15
-    elif 0.10 < equal_opportunity_diff <= 0.20:
+    elif 0.11 < equal_opportunity_diff <= 0.21:
         eo_score = 10
     else:
         eo_score = 5
