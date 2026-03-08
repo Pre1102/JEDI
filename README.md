@@ -26,3 +26,10 @@ Random Forest
 Decision Tree
 These models are used as baseline predictors for ethical evaluation.
 
+⚖️ Fairness Testing
+Evaluate models using standardized ethical metrics:
+Demographic Parity
+Measures whether prediction outcomes are similar across demographic groups.
+DP_diff = |P(ŷ = 1 | group A) − P(ŷ = 1 | group B)|
+Large differences may indicate algorithmic bias.
+
