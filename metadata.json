@@ -1,0 +1,5 @@
+{
+  "name": "JEDI Code Compliance System",
+  "description": "An AI Ethical Auditing Framework designed to evaluate machine learning models for fairness, transparency, and reliability.",
+  "requestFramePermissions": []
+}
