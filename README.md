@@ -141,4 +141,14 @@ Bias Detection   Fairness Tests  Bias Report
  ▼               ▼               ▼
 Dataset Summary  Explainability  Recommendations
 
+⚙️ End-to-End Workflow
+1️⃣ Dataset Upload
+Users upload a dataset in CSV format.
+Example use cases:
+Hiring prediction
+Disease diagnosis
+Recidivism prediction
+Financial risk assessment
+The dataset is automatically previewed and validated.
+
 
