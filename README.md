@@ -1,17 +1,9 @@
 ⚖️ JEDI Code Compliance System
-AI Ethical Auditing Framework for Machine Learning Models
+AI Ethical Auditing Framework
 
-
-
-
-The JEDI (Justice, Ethics, Diversity, Integrity) Code Compliance System is an AI auditing framework designed to evaluate machine learning models for ethical compliance, fairness, transparency, and reliability.
-The system enables users to upload datasets, train baseline machine learning models, analyze fairness metrics, generate explainability insights, and produce comprehensive AI compliance reports.
-The framework is domain-agnostic, meaning it can audit AI systems used in:
-Hiring and recruitment systems
-Healthcare diagnosis models
-Financial risk assessment
-Criminal justice / recidivism prediction
-Any ML system using structured tabular data
+JEDI (Justice, Ethics, Diversity, Integrity) is an AI auditing framework designed to evaluate machine learning models for ethical compliance, fairness, transparency, and reliability.
+The system allows users to upload datasets, train baseline models, evaluate fairness metrics, generate explainability insights, and produce AI compliance reports.
+It is domain-agnostic, meaning it can audit AI systems used in hiring, healthcare, finance, criminal justice, and other sectors.
 
 🚀 Features
 📊 Dataset Auditing
@@ -24,122 +16,33 @@ Train baseline ML models directly in the system:
 Logistic Regression
 Random Forest
 Decision Tree
-These models are used as baseline predictors for ethical evaluation.
 
 ⚖️ Fairness Testing
 Evaluate models using standardized ethical metrics:
 Demographic Parity
-Measures whether prediction outcomes are similar across demographic groups.
-DP_diff = |P(ŷ = 1 | group A) − P(ŷ = 1 | group B)|
-Large differences may indicate algorithmic bias.
-
 Equal Opportunity
-Ensures qualified individuals have equal chances of positive predictions.
-TPR = TP / (TP + FN)
-EO_diff = |TPR_A − TPR_B|
+Calibration (Brier Score)
 
-Calibration
-Evaluates the reliability of predicted probabilities.
-Metric used: Brier Score
-Calibration_diff = |Brier_A − Brier_B|
-Poor calibration indicates unreliable predictions.
+🔍 Explainable AI
+Integrated SHAP explainability to analyze model decisions.
+Global feature importance
+Individual prediction explanations
+Sensitive attribute influence detection
 
-🔍 Explainable AI Module
-The system integrates SHAP (SHapley Additive Explanations) for model transparency.
-Global Feature Importance
-Shows which features influence model predictions the most.
-Example:
-Feature
-Importance
-Feature 1
-0.30
-Feature 2
-0.25
-Feature 3
-0.18
-Sensitive Attribute
-0.12
-
-A high contribution from sensitive attributes may indicate potential bias.
-
-Individual Prediction Explanation
-Explains the reasoning behind a specific prediction.
-Example:
-Prediction: Positive
-Top Contributing Factors:
-Feature A +0.32
-Feature B +0.15
-Sensitive Attribute -0.20
-This allows transparent AI decision auditing.
-
-📊 Ethical Scorecard
-The framework produces a visual ethical compliance scorecard summarizing fairness results.
-Ethical Test
-Result
-Demographic Parity
-🟢 Pass
-Equal Opportunity
-🟡 Warning
-Calibration
-🟢 Pass
-Explainability
-🟢 Pass
-
-Color Indicators
-🟢 Pass
-🟡 Warning
-🔴 Fail
-
-📉 Bias Detection Report
-The system highlights patterns of bias across demographic groups.
-Example insight:
-Significant differences detected in prediction outcomes between demographic groups, indicating potential algorithmic bias.
-Reports include:
-fairness comparison charts
-statistical summaries
-demographic group analysis
-
-💡 Recommendations
-To mitigate bias, the framework suggests improvements such as:
-balancing the training dataset
-removing proxy variables correlated with sensitive attributes
-applying fairness-aware training techniques
-evaluating alternative models
+🧠 Bias Detection
+Automatically identifies disparities between demographic groups.
 
 📑 Compliance Reporting
-A complete AI governance report is generated containing:
-Dataset summary
-Model details
-Fairness metrics
-Explainability analysis
-Bias detection insights
-Ethical recommendations
-Reports can be exported as:
+Generate complete AI governance reports including:
+Ethical scorecard
+Bias analysis
+Explainability insights
+Improvement recommendations
+Export options:
 PDF
 JSON
 Dashboard view
 
-🏗 System Architecture
-User
- │
- ▼
-Frontend Dashboard (React)
- │
- ▼
-Backend API (FastAPI)
- │
- ├───────────────┬───────────────┬───────────────
- ▼               ▼               ▼
-Dataset Engine   Model Engine    Reporting Engine
- │               │               │
- ▼               ▼               ▼
-Data Preprocess  Model Training  Ethical Scorecard
- │               │               │
- ▼               ▼               ▼
-Bias Detection   Fairness Tests  Bias Report
- │               │               │
- ▼               ▼               ▼
-Dataset Summary  Explainability  Recommendations
 
 ⚙️ End-to-End Workflow
 1️⃣ Dataset Upload
@@ -149,6 +52,160 @@ Hiring prediction
 Disease diagnosis
 Recidivism prediction
 Financial risk assessment
-The dataset is automatically previewed and validated.
+The system automatically loads and previews the dataset.
+
+2️⃣ Configuration
+Users configure the auditing parameters:
+Inputs:
+Target variable
+Sensitive attribute(s)
+Model type
+Example:
+Target Column: outcome
+Sensitive Attribute: gender
+Model Type: Random Forest
 
 
+3️⃣ Data Preparation
+The system performs preprocessing:
+Missing value handling
+Categorical encoding
+Feature / target separation
+Sensitive attribute identification
+
+4️⃣ Model Training
+A baseline ML model is trained on the dataset.
+Supported models:
+Logistic Regression
+Random Forest
+Decision Tree
+Predictions generated by the model are used for ethical evaluation.
+
+⚖️ Fairness Metrics
+Demographic Parity
+Measures whether prediction rates are similar across demographic groups.
+DP_diff = |P(ŷ = 1 | group A) − P(ŷ = 1 | group B)|
+
+Large differences indicate potential bias.
+
+Equal Opportunity
+Ensures equal true positive rates across groups.
+TPR = TP / (TP + FN)
+
+EO_diff = |TPR_A − TPR_B|
+
+If the difference is large, the model disadvantages certain groups.
+
+Calibration
+Checks whether predicted probabilities match real outcomes.
+Metric used:
+Brier Score
+Calibration_diff = |Brier_A − Brier_B|
+
+Poor calibration indicates unreliable predictions.
+
+🔎 Explainability Module
+JEDI uses SHAP (SHapley Additive Explanations) to interpret model predictions.
+Global Feature Importance
+Example:
+Feature             Importance
+Feature 1           0.30
+Feature 2           0.25
+Feature 3           0.18
+Sensitive Attribute 0.12
+
+A high influence from sensitive attributes can indicate bias.
+
+Individual Prediction Explanation
+Example output:
+Prediction: Positive
+
+Top Contributing Factors:
+Feature A +0.32
+Feature B +0.15
+Sensitive Attribute -0.20
+
+This enables transparent AI decision auditing.
+
+📊 Ethical Scorecard
+The framework produces a visual ethical compliance scorecard.
+Ethical Test             Result
+Demographic Parity       ✅ Pass
+Equal Opportunity        ⚠️ Warning
+Calibration              ✅ Pass
+Transparency             ✅ Pass
+
+Overall Status:
+Conditionally Compliant
+
+📉 Bias Detection Report
+The system highlights detected bias patterns.
+Example insight:
+Significant differences detected in prediction outcomes between demographic groups.
+The report includes:
+fairness charts
+statistical summaries
+group comparisons
+
+💡 Recommendations
+The framework suggests mitigation strategies:
+Balance training data distribution
+Remove proxy variables
+Use fairness-aware training methods
+Evaluate alternative models
+
+🖥 User Interface
+Landing Page
+Introduction to the JEDI Code Compliance System
+Dataset Upload Screen
+Upload dataset
+Select target variable
+Select sensitive attributes
+Choose model type
+Fairness Evaluation Dashboard
+
+Displays:
+Demographic parity
+Equal opportunity
+Calibration metrics
+Prediction distribution charts
+Explainability Dashboard
+
+Shows:
+Feature importance charts
+SHAP plots
+Sensitive attribute influence
+Bias Report Screen
+Displays detected bias patterns and recommendations.
+Compliance Scorecard
+Final evaluation page with export options.
+
+🛠 Tech Stack
+Frontend
+React
+Tailwind CSS
+Recharts / Chart.js
+Backend
+FastAPI
+Python
+Scikit-learn
+SHAP
+
+📂 Repository Structure
+JEDI
+│
+├── frontend/          # React dashboard
+├── backend/           # FastAPI API
+├── models/            # ML training modules
+├── fairness/          # Ethical evaluation metrics
+├── explainability/    # SHAP analysis
+├── reporting/         # Compliance report generation
+└── README.md
+
+
+🔮 Future Improvements
+Deep learning model auditing
+Automated bias mitigation
+Model monitoring in production
+Regulatory compliance templates
+Multi-model benchmarking
