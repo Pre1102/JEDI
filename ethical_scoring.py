@@ -42,9 +42,9 @@ def calculate_ethical_ai_score(
     # 3. Calibration Score (Max 15 points)
     if calibration_diff < 0.03:
         cal_score = 15
-    elif 0.03 <= calibration_diff <= 0.07:
-        cal_score = 10
-    elif 0.07 < calibration_diff <= 0.12:
+    elif 0.03 <= calibration_diff <= 0.08:
+        cal_score = 11
+    elif 0.08 < calibration_diff <= 0.12:
         cal_score = 7
     else:
         cal_score = 3
