@@ -67,3 +67,21 @@ These models are used to evaluate fairness and bias in predictions.
 3. Fairness Testing
 
 The system evaluates models using standardized AI fairness metrics.
+
+Demographic Parity
+
+Measures whether prediction rates are similar across demographic groups.
+
+DP_diff = | P(ŷ = 1 | group A) − P(ŷ = 1 | group B) |
+
+Large differences indicate potential bias.
+
+4. Equal Opportunity
+
+Ensures equal true positive rates across groups.
+
+TPR = TP / (TP + FN)
+
+EO_diff = | TPR_A − TPR_B |
+
+A high difference means the model may disadvantage certain groups.
