@@ -1,10 +1,4 @@
-Here is a **clean, professional GitHub README.md** version of your project. It follows the typical **open-source project structure** used in AI/ML repositories so it looks good on GitHub and for recruiters.
-
-You can **directly copy-paste this into your `README.md`**.
-
----
-
-# ⚖️ JEDI Code Compliance System
+# JEDI Code Compliance System
 
 ### AI Ethical Auditing Framework
 
