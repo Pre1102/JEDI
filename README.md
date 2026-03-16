@@ -304,15 +304,3 @@ Scikit-learn
 SHAP
 
 🔮 Future Improvements
-
-Planned extensions:
-
-Deep learning model auditing
-
-Automated bias mitigation
-
-Production model monitoring
-
-Regulatory compliance templates
-
-Multi-model benchmarking
