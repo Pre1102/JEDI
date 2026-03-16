@@ -160,10 +160,10 @@ Conditionally Compliant
 
 The system produces a detailed bias analysis report including:
 
-Statistical summaries
+- Statistical summaries
 
-Fairness metrics
+- Fairness metrics
 
-Group comparison charts
+- Group comparison charts
 
-Risk indicators
+- Risk indicators
