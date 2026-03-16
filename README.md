@@ -1,372 +1,330 @@
-# JEDI Code Compliance System
+JEDI Code Compliance System
+Ethical Score & Explainability Framework for Responsible AI
+Overview
+The JEDI Code Compliance System is a comprehensive AI ethics auditing platform designed to evaluate machine learning systems before deployment. The platform analyzes datasets and models to detect bias, evaluate fairness, ensure transparency, and generate compliance reports for multiple stakeholders.
+The system provides a multi-dimensional ethical evaluation framework that enables developers, organizations, and regulators to assess AI systems across fairness, privacy, transparency, accountability, and robustness.
+By combining bias detection, explainability, ethical scoring, and automated governance mechanisms, the JEDI Code Compliance System helps ensure that AI applications remain fair, transparent, and responsible.
 
-### AI Ethical Auditing Framework
+Problem Statement
+AI systems are increasingly used in sensitive domains such as hiring, healthcare, finance, and criminal justice. However, these systems can unintentionally produce biased or unfair outcomes due to imbalanced datasets or poorly designed models.
+The JEDI Code Compliance System addresses this challenge by providing a comprehensive ethical auditing framework that identifies bias, explains model decisions, predicts ethical risks, and recommends corrective actions before deployment.
 
-The **JEDI Code Compliance System** is an AI auditing framework designed to evaluate machine learning models for **ethical compliance, fairness, transparency, and reliability**.
+Core Features
+1. Multi-Dimensional Ethical Scoring
+The system evaluates AI models across five ethical dimensions:
+Fairness
+Demographic Parity
 
-**JEDI** stands for:
 
-* **J** – Justice
-* **E** – Ethics
-* **D** – Diversity
-* **I** – Integrity
+Equal Opportunity
 
-The system allows users to **audit machine learning models** by analyzing fairness metrics, generating explainability insights, detecting bias, and producing compliance reports.
 
-It is **domain-agnostic**, meaning it can audit AI systems used in:
+Bias detection across demographic groups
 
-* Hiring systems
-* Healthcare diagnosis models
-* Financial risk prediction
-* Criminal justice algorithms
-* Loan approval systems
-* Any machine learning decision system
 
----
+Privacy
+Detection of potential PII exposure
 
-# 🚀 Features
 
-## 📊 Dataset Auditing
+Data leakage checks
 
-* Upload datasets in **CSV format**
-* Automatic dataset preview
-* Configure **target variable**
-* Configure **sensitive attributes**
 
-Example sensitive attributes:
+Secure dataset handling
 
-* Gender
-* Race
-* Age group
-* Location
 
----
+Transparency
+Model explainability using SHAP and LIME
 
-## 🤖 Model Evaluation
 
-The framework trains baseline machine learning models directly inside the system.
+Feature importance analysis
 
-Supported models:
 
-* Logistic Regression
-* Random Forest
-* Decision Tree
+Accountability
+Decision logging
 
-These models are used to **evaluate fairness and bias in predictions**.
 
----
+Complete audit trails
 
-## ⚖️ Fairness Testing
 
-The system evaluates models using standardized **AI fairness metrics**.
+Evaluation history tracking
 
-### Demographic Parity
 
-Measures whether prediction rates are **similar across demographic groups**.
+Robustness
+Detection of edge cases
 
-DP_diff = | P(ŷ = 1 | group A) − P(ŷ = 1 | group B) |
 
-Large differences indicate **potential bias**.
+Adversarial input testing
 
----
 
-### Equal Opportunity
+Model stability analysis
 
-Ensures **equal true positive rates** across groups.
 
-TPR = TP / (TP + FN)
+Each dimension receives a score between 0–100, and an overall JEDI Ethical Score summarizes the model’s ethical performance.
 
-EO_diff = | TPR_A − TPR_B |
+Dataset Privacy Protection
+The system ensures privacy-preserving audits by implementing secure dataset lifecycle management.
+Features include:
+Automatic removal of personally identifiable information
 
-A high difference means the model may **disadvantage certain groups**.
 
----
+Detection and removal of fields such as names, emails, and phone numbers
 
-### Calibration
 
-Checks whether predicted probabilities **match real outcomes**.
+Temporary dataset processing
 
-Metric used:
 
-**Brier Score**
+Automatic dataset deletion after analysis
 
-Calibration_diff = | Brier_A − Brier_B |
 
-Poor calibration indicates **unreliable predictions**.
+Only the ethical metrics and evaluation results are stored.
 
----
+Bias Heatmap Visualization
+The platform generates an interactive Bias Heatmap that highlights bias across features and demographic groups.
+Color indicators:
+Green – Fair outcomes
 
-# 🔍 Explainable AI
 
-The system integrates **SHAP (SHapley Additive Explanations)** to interpret model decisions.
+Yellow – Moderate bias
 
-### Global Feature Importance
 
-Example output:
+Red – High bias
 
-| Feature             | Importance |
-| ------------------- | ---------- |
-| Feature 1           | 0.30       |
-| Feature 2           | 0.25       |
-| Feature 3           | 0.18       |
-| Sensitive Attribute | 0.12       |
 
-High importance of sensitive attributes may indicate **algorithmic bias**.
+This visualization enables users to quickly identify features that contribute to biased outcomes.
 
----
+Real-Time Decision Explanation
+The system provides real-time explainability for individual predictions using advanced explainability methods.
+Techniques used:
+SHAP for global feature importance
 
-### Individual Prediction Explanation
 
-Example:
+LIME for local explanations
 
-Prediction: **Positive**
 
-Top Contributing Factors:
+Counterfactual explanations
 
-Feature A → +0.32
-Feature B → +0.15
-Sensitive Attribute → −0.20
 
-This enables **transparent auditing of AI decisions**.
+Example counterfactual insight:
+If the applicant’s income were 10% higher, the model would approve the application.
+This improves transparency and trust in AI decisions.
 
----
+AI What-If Bias Simulator
+The Bias Simulator allows users to interactively test how fairness metrics change when dataset conditions are modified.
+Users can simulate:
+Changes in demographic representation
 
-# 🧠 Bias Detection
 
-The framework automatically detects **bias patterns between demographic groups**.
+Removal of sensitive attributes
 
-Example insight:
 
-> Significant differences detected in prediction outcomes between demographic groups.
+Adjustments to classification thresholds
 
-Bias analysis includes:
 
-* Prediction distribution comparison
-* Group-wise fairness statistics
-* Fairness charts
+The system dynamically recalculates:
+Demographic parity
 
----
 
-# 📊 Ethical Scorecard
+Equal opportunity
 
-The system generates a **visual compliance scorecard**.
 
-| Ethical Test       | Result     |
-| ------------------ | ---------- |
-| Demographic Parity | ✅ Pass     |
-| Equal Opportunity  | ⚠️ Warning |
-| Calibration        | ✅ Pass     |
-| Transparency       | ✅ Pass     |
+Ethical score
 
-Overall Status:
 
-**Conditionally Compliant**
+This feature helps developers understand how data changes impact fairness.
 
----
+Bias Remediation Toolkit
+When bias is detected, the system provides automated remediation suggestions.
+Implemented techniques include:
+Reweighting training data to balance demographic representation
 
-# 📉 Bias Detection Report
 
-The system produces a detailed **bias analysis report** including:
+Fairness constraints during model training
 
-* Statistical summaries
-* Fairness metrics
-* Group comparison charts
-* Risk indicators
 
----
+Post-processing threshold adjustments
 
-# 💡 Recommendations
 
-The framework suggests **bias mitigation strategies**, such as:
+The platform displays before and after fairness metrics, demonstrating measurable bias reduction.
 
-* Balancing the training dataset
-* Removing proxy variables
-* Using fairness-aware training techniques
-* Evaluating alternative models
+Automated Ethical Testing Pipeline
+The system includes an automated ethical evaluation pipeline to ensure AI models meet ethical standards before deployment.
+Capabilities include:
+Automatic bias detection
 
----
 
-# ⚙️ End-to-End Workflow
+Continuous ethical evaluation
 
-## 1️⃣ Dataset Upload
 
-Users upload a dataset in **CSV format**.
+Regression testing to detect fairness degradation
 
-Example datasets:
 
-* Hiring prediction dataset
-* Disease diagnosis dataset
-* Recidivism dataset
-* Financial risk dataset
+Ethical score threshold validation
 
-The system automatically **loads and previews the dataset**.
 
----
+Alerts when ethical performance decreases
 
-## 2️⃣ Configuration
 
-Users configure auditing parameters.
+This enables continuous monitoring of ethical performance across model versions.
 
-Inputs:
-
-* Target variable
-* Sensitive attribute(s)
-* Model type
-
-Example configuration:
-
-Target Column: `outcome`
-Sensitive Attribute: `gender`
-Model Type: `Random Forest`
-
----
-
-## 3️⃣ Data Preparation
-
-The system performs preprocessing:
-
-* Missing value handling
-* Categorical encoding
-* Feature / target separation
-* Sensitive attribute identification
-
----
-
-## 4️⃣ Model Training
-
-A **baseline ML model** is trained.
-
-Supported models:
-
-* Logistic Regression
-* Random Forest
-* Decision Tree
-
-The trained model generates predictions used for **ethical evaluation**.
-
----
-
-# 🖥 User Interface
-
-## Landing Page
-
-Overview of the **JEDI AI Ethical Auditing Framework**.
-
----
-
-## Dataset Upload Screen
-
-Users can:
-
-* Upload dataset
-* Select target variable
-* Select sensitive attributes
-* Choose model type
-
----
-
-## Fairness Evaluation Dashboard
-
-Displays:
-
-* Demographic parity
-* Equal opportunity
-* Calibration metrics
-* Prediction distribution charts
-
----
-
-## Explainability Dashboard
-
-Shows:
-
-* Feature importance charts
-* SHAP plots
-* Sensitive attribute influence
-
----
-
-## Bias Report Screen
-
-Displays:
-
-* Bias patterns
-* Fairness statistics
-* Mitigation recommendations
-
----
-
-## Compliance Scorecard
-
-Final evaluation page showing:
-
-* Ethical scorecard
-* Compliance status
-* Export options
-
----
-
-# 📑 Compliance Reporting
-
-The system generates **complete AI governance reports**.
-
+Stakeholder-Specific Reports
+The platform generates customized reports tailored to different stakeholders.
+Developer Report
 Includes:
+technical fairness metrics
 
-* Ethical scorecard
-* Bias analysis
-* Explainability insights
-* Improvement recommendations
 
-Export formats:
+feature importance
 
-* PDF
-* JSON
-* Dashboard view
 
----
+bias detection results
 
-# 🛠 Tech Stack
 
-## Frontend
+remediation recommendations
 
-* React
-* Tailwind CSS
-* Recharts / Chart.js
 
-## Backend
+Regulator Report
+Includes:
+compliance checklist
 
-* FastAPI
-* Python
 
-## Machine Learning
+ethical dimension scores
 
-* Scikit-learn
-* SHAP
 
----
+bias audit summary
 
-# 📂 Repository Structure
 
-```
-JEDI
-│
-├── frontend/          # React dashboard
-├── backend/           # FastAPI API
-├── models/            # ML training modules
-├── fairness/          # Ethical evaluation metrics
-├── explainability/    # SHAP analysis
-├── reporting/         # Compliance report generation
-└── README.md
-```
+End-User Report
+Provides:
+simplified explanation of AI decisions
 
----
 
-# 🔮 Future Improvements
+description of potential bias impact
 
-Planned extensions:
 
-* Deep learning model auditing
-* Automated bias mitigation
-* Production model monitoring
-* Regulatory compliance templates
-* Multi-model benchmarking
+Executive Report
+Provides:
+high-level ethical score
+
+
+risk assessment
+
+
+compliance summary
+
+
+All reports can be downloaded as PDF documents.
+
+System Workflow
+Step 1 – User Authentication
+Users create accounts and log in to access the platform.
+Step 2 – Start Ethical Audit
+Users initiate the AI evaluation process from the dashboard.
+Step 3 – Dataset Upload
+Users upload datasets and specify:
+target variable
+
+
+sensitive attributes
+
+
+model type
+
+
+The platform displays dataset preview and statistics.
+Step 4 – Dataset Anonymization
+The system automatically removes personally identifiable information before analysis.
+Step 5 – Ethical Evaluation
+The system evaluates fairness metrics including demographic parity and equal opportunity.
+Step 6 – Bias Heatmap Generation
+Visual heatmaps highlight features contributing to bias.
+Step 7 – Explainability Analysis
+Individual predictions are explained using SHAP and LIME.
+Step 8 – Bias Simulation
+Users experiment with hypothetical dataset modifications to observe fairness improvements.
+Step 9 – Bias Remediation
+Suggested mitigation techniques are applied and fairness metrics are recomputed.
+Step 10 – Ethical Score Calculation
+The system calculates a final JEDI Ethical Score representing overall ethical performance.
+Step 11 – Automated Ethical Testing
+Ethical testing pipeline evaluates model performance and detects fairness regression.
+Step 12 – Compliance Report Generation
+Detailed stakeholder-specific reports are generated and available for download.
+
+Technology Stack
+Backend
+Python
+
+
+FastAPI
+
+
+Pandas
+
+
+NumPy
+
+
+Scikit-learn
+
+
+Explainability
+SHAP
+
+
+LIME
+
+
+Frontend
+React
+
+
+Chart.js / Recharts
+
+
+Data Processing
+Pandas
+
+
+NumPy
+
+
+Reporting
+ReportLab (PDF generation)
+
+
+
+Key Benefits
+The JEDI Code Compliance System enables organizations to:
+Detect bias before AI deployment
+
+
+Improve transparency in machine learning models
+
+
+Ensure ethical AI governance
+
+
+Provide regulatory compliance support
+
+
+Demonstrate measurable bias reduction
+
+
+
+Installation
+Clone the repository:
+git clone https://github.com/your-repository/jedi-code-compliance-system.git
+Navigate to the project directory:
+cd jedi-code-compliance-system
+Install backend dependencies:
+pip install fastapi uvicorn pandas numpy scikit-learn shap lime matplotlib seaborn reportlab python-multipart
+Start the backend server:
+uvicorn main:app --reload
+Install frontend dependencies:
+npm install
+Run the frontend:
+npm start
+
+Conclusion
+The JEDI Code Compliance System provides a comprehensive ethical auditing framework for AI systems. By combining fairness evaluation, explainability, bias remediation, automated ethical testing, and stakeholder reporting, the platform enables organizations to build responsible, transparent, and trustworthy AI applications.
+
