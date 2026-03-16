@@ -246,3 +246,15 @@ The trained model generates predictions used for ethical evaluation.
 Landing Page
 
 Overview of the JEDI AI Ethical Auditing Framework.
+
+Dataset Upload Screen
+
+Users can:
+
+Upload dataset
+
+Select target variable
+
+Select sensitive attributes
+
+Choose model type
