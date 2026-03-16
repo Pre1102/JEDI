@@ -63,3 +63,5 @@ Supported models:
 - Decision Tree
 
 These models are used to evaluate fairness and bias in predictions.
+
+3. Fairness Metrics
