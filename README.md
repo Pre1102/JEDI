@@ -179,3 +179,6 @@ The framework suggests bias mitigation strategies, such as:
 - Using fairness-aware training techniques
 
 - Evaluating alternative models
+
+*END TO END WORKFLOW*
+
