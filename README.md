@@ -141,3 +141,17 @@ Feature B → +0.15
 Sensitive Attribute → −0.20
 
 This enables transparent auditing of AI decisions.
+
+9. Ethical Scorecard
+
+The system generates a visual compliance scorecard.
+
+Ethical Test	Result
+Demographic Parity	 Pass
+Equal Opportunity	 Warning
+Calibration	         Pass
+Transparency	     Pass
+
+Overall Status:
+
+Conditionally Compliant
