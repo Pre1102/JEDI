@@ -29,3 +29,23 @@ It is domain-agnostic, meaning it can audit AI systems used in:
 - Any machine learning decision system
 
 Features:
+
+1. Dataset Auditing
+
+- Upload datasets in CSV format
+
+- Automatic dataset preview
+
+- Configure target variable
+
+- Configure sensitive attributes
+
+Example sensitive attributes:
+
+- Gender
+
+- Race
+
+- Age group
+
+- Location
