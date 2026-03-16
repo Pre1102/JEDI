@@ -65,3 +65,5 @@ Supported models:
 These models are used to evaluate fairness and bias in predictions.
 
 3. Fairness Testing
+
+The system evaluates models using standardized AI fairness metrics.
