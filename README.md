@@ -197,3 +197,21 @@ Example datasets:
     Financial risk dataset
 
 The system automatically loads and previews the dataset.
+
+2. Configuration
+
+Users configure auditing parameters.
+
+Inputs:
+
+Target variable
+
+Sensitive attribute(s)
+
+Model type
+
+Example configuration:
+
+Target Column: outcome
+Sensitive Attribute: gender
+Model Type: Random Forest
