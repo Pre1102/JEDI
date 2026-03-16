@@ -113,3 +113,17 @@ Feature 3	0.18
 Sensitive Attribute	0.12
 
 High importance of sensitive attributes may indicate algorithmic bias.
+
+Individual Prediction Explanation
+
+Example:
+
+Prediction: Positive
+
+Top Contributing Factors:
+
+Feature A → +0.32
+Feature B → +0.15
+Sensitive Attribute → −0.20
+
+This enables transparent auditing of AI decisions.
