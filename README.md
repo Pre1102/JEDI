@@ -16,3 +16,14 @@ The system allows users to audit machine learning models by analyzing fairness m
 
 It is domain-agnostic, meaning it can audit AI systems used in:
 
+- Hiring systems
+
+- Healthcare diagnosis models
+
+- Financial risk prediction
+
+- Criminal justice algorithms
+
+- Loan approval systems
+
+- Any machine learning decision system
