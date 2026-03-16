@@ -258,3 +258,15 @@ Select target variable
 Select sensitive attributes
 
 Choose model type
+
+Fairness Evaluation Dashboard
+
+Displays:
+
+Demographic parity
+
+Equal opportunity
+
+Calibration metrics
+
+Prediction distribution charts
