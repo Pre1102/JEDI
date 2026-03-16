@@ -215,3 +215,15 @@ Example configuration:
 Target Column: outcome
 Sensitive Attribute: gender
 Model Type: Random Forest
+
+3️⃣ Data Preparation
+
+The system performs preprocessing:
+
+Missing value handling
+
+Categorical encoding
+
+Feature / target separation
+
+Sensitive attribute identification
