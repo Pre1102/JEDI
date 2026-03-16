@@ -27,3 +27,5 @@ It is domain-agnostic, meaning it can audit AI systems used in:
 - Loan approval systems
 
 - Any machine learning decision system
+
+Features:
