@@ -182,3 +182,18 @@ The framework suggests bias mitigation strategies, such as:
 
 *END TO END WORKFLOW*
 
+1. Dataset Upload
+
+Users upload a dataset in CSV format.
+
+Example datasets:
+
+    Hiring prediction dataset
+
+    Disease diagnosis dataset
+
+    Recidivism dataset
+
+    Financial risk dataset
+
+The system automatically loads and previews the dataset.
