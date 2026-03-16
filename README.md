@@ -167,3 +167,15 @@ The system produces a detailed bias analysis report including:
 - Group comparison charts
 
 - Risk indicators
+
+11. Recommendations
+
+The framework suggests bias mitigation strategies, such as:
+
+- Balancing the training dataset
+
+- Removing proxy variables
+
+- Using fairness-aware training techniques
+
+- Evaluating alternative models
