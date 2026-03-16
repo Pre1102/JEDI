@@ -155,3 +155,15 @@ Transparency	     Pass
 Overall Status:
 
 Conditionally Compliant
+
+10. Bias Detection Report
+
+The system produces a detailed bias analysis report including:
+
+Statistical summaries
+
+Fairness metrics
+
+Group comparison charts
+
+Risk indicators
