@@ -85,3 +85,15 @@ TPR = TP / (TP + FN)
 EO_diff = | TPR_A − TPR_B |
 
 A high difference means the model may disadvantage certain groups.
+
+5. Calibration
+
+Checks whether predicted probabilities match real outcomes.
+
+Metric used:
+
+- Brier Score
+
+- Calibration_diff = | Brier_A − Brier_B |
+
+Poor calibration indicates unreliable predictions.
