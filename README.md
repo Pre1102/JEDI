@@ -304,3 +304,28 @@ Scikit-learn
 SHAP
 
 🔮 Future Improvements
+🔮 Future Improvements
+
+Planned extensions:
+
+Deep learning model auditing
+
+Automated bias mitigation
+
+Production model monitoring
+
+Regulatory compliance templates
+
+Multi-model benchmarking
+
+If you want, I can also help you make this much more GitHub-professional with:
+
+⭐ badges (Python, React, FastAPI, License)
+
+📸 dashboard screenshots section
+
+⚡ installation guide
+
+▶️ how to run locally
+
+🧪 sample dataset
