@@ -97,3 +97,19 @@ Metric used:
 - Calibration_diff = | Brier_A − Brier_B |
 
 Poor calibration indicates unreliable predictions.
+
+6. Explainable AI
+
+The system integrates SHAP (SHapley Additive Explanations) to interpret model decisions.
+
+Global Feature Importance
+
+Example output:
+
+Feature	Importance
+Feature 1	0.30
+Feature 2	0.25
+Feature 3	0.18
+Sensitive Attribute	0.12
+
+High importance of sensitive attributes may indicate algorithmic bias.
