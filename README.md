@@ -270,3 +270,13 @@ Equal opportunity
 Calibration metrics
 
 Prediction distribution charts
+
+Explainability Dashboard
+
+Shows:
+
+Feature importance charts
+
+SHAP plots
+
+Sensitive attribute influence
