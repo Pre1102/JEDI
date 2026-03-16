@@ -280,3 +280,25 @@ Feature importance charts
 SHAP plots
 
 Sensitive attribute influence
+
+
+🛠 Tech Stack
+Frontend
+
+React
+
+Tailwind CSS
+
+Recharts / Chart.js
+
+Backend
+
+FastAPI
+
+Python
+
+Machine Learning
+
+Scikit-learn
+
+SHAP
