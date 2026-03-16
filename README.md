@@ -51,3 +51,15 @@ Example sensitive attributes:
 - Location
 
 2. Model Evaluation
+
+The framework trains baseline machine learning models directly inside the system.
+
+Supported models:
+
+- Logistic Regression
+
+- Random Forest
+
+- Decision Tree
+
+These models are used to evaluate fairness and bias in predictions.
