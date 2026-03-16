@@ -241,3 +241,8 @@ Random Forest
 Decision Tree
 
 The trained model generates predictions used for ethical evaluation.
+
+🖥 User Interface
+Landing Page
+
+Overview of the JEDI AI Ethical Auditing Framework.
