@@ -227,3 +227,17 @@ Categorical encoding
 Feature / target separation
 
 Sensitive attribute identification
+
+4️⃣ Model Training
+
+A baseline ML model is trained.
+
+Supported models:
+
+Logistic Regression
+
+Random Forest
+
+Decision Tree
+
+The trained model generates predictions used for ethical evaluation.
